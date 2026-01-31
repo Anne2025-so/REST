@@ -1,0 +1,191 @@
+*{
+
+    margin:0;
+    padding: 0;
+     box-sizing: border-box;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+ 
+    background-image:url("https://th.bing.com/th/id/OIP.XtTRsHRMTlGo7Z63UQ_BkwHaFj?w=248&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    height: 150vh;
+}
+
+header{
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: white;
+}
+
+    .menu-toggle{
+        font-size: 26px;
+        cursor:pointer;
+        display: none;
+        
+        }
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px;
+    border: 4px solid black;
+}
+nav{
+    background: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+
+
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    display: block;
+}
+
+
+
+
+
+.ACC{
+    padding: 40px;
+    text-align: center;
+}
+
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+     
+}
+.grid-item img{ 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+   gap: 25px;
+   box-shadow: 0 2px 4px;
+   border: 5px solid black;
+   
+
+}
+
+
+.grid-item img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.contactus{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 p{
+    text-align: center;
+
+}
+
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[ype="submit"]:hover{
+    background-color: rgb(216, 116, 23);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+.btn{
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+.btn:hover{
+    color: rgb(216, 116, 23);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width :768px){
+    .menu-toggle{
+        display: block;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    
+    nav{
+        display: none;
+    }
+
+nav.active{
+    display: block;
+}
+
+nav ul{
+    flex-direction: column;
+}
+}
